@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Change</title>
+  <script>
+    function changeText() {
+      setTimeout(function() {
+        var userInput = prompt("תקטול את שלם כאן:");
+        document.getElementById("text").innerHTML = userInput;
+      }, 4000);
+    }
+
+    window.onload = function() {
+      changeText();
+    };
+  </script>
+</head>
+<body>
+  <h1 id="text" align="center">!שלום! זה אתר פריקת העצבים על שלם, תכתבו משהו בתיבת טקסט שתופיע עוד מעט על המסך וזה יופע במקום הטקסט הזה</h1>
+</body>
+</html>
